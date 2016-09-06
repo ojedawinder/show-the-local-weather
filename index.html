@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Show the Local Weather</title>
+    <script src="jquery-3.1.0.min.js"></script>
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src="functions.js"></script>
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css" style="text/css"/>
+    <link rel="stylesheet" href="style.css" style="text/css"/>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  </head>
+  <body>
+        <div class="row">
+          <header class="col-xs-12 text-center">
+            <h2>Local Weather APP</h2>
+          </header>
+
+          <div class="col-xs-12">
+            <div class="text-center status">
+              <p id="cityInformation"></p>
+            </div>
+          </div>
+
+            <div class="col-xs-12">
+              <div class="col-xs-6 text-center status">
+                <p id="tempInformation"></p>
+              </div>
+              <div class="col-xs-6 text-center status">
+                <p id="pressureInformation"></p>
+              </div>
+            </div>
+
+            <div class="col-xs-12">
+              <div class="col-xs-6 text-center status">
+                <p id="humidityInformation"></p>
+              </div>
+              <div class="col-xs-6 text-center status">
+                <p id="desc"></p>
+              </div>
+            </div>
+
+            <div class="col-xs-12 ">
+              <div class="col-xs-6 text-center status">
+                <p id="tempMinInformation"></p>
+              </div>
+              <div class="col-xs-6 text-center status">
+                <p id="tempMaxInformation"></p>
+              </div>
+            </div>
+
+            <div class="text-center all-icon">
+              <div class="icon sun-shower hide ">
+                <div class="cloud"></div>
+                <div class="sun">
+                  <div class="rays"></div>
+                </div>
+                <div class="rain"></div>
+              </div>
+              <div class="icon thunder-storm hide thunderstom">
+                <div class="cloud"></div>
+                <div class="lightning">
+                  <div class="bolt"></div>
+                  <div class="bolt"></div>
+                </div>
+              </div>
+              <div class="icon cloudy hide clouds">
+                <div class="cloud"></div>
+                <div class="cloud"></div>
+              </div>
+              <div class="icon flurries hide snow">
+                <div class="cloud"></div>
+                <div class="snow">
+                  <div class="flake"></div>
+                  <div class="flake"></div>
+                </div>
+              </div>
+              <div class="icon sunny hide clear">
+                <div class="sun">
+                  <div class="rays"></div>
+                </div>
+              </div>
+              <div class="icon rainy hide rain">
+                <div class="cloud"></div>
+                <div class="rain"></div>
+              </div>
+            </div>
+
+            <div class="col-xs-12">
+              <div class="text-center status">
+                <button class="btn" id="btnChangeUnit">Show data in Fahrenheit</button>
+              </div>
+            </div>
+
+            <div id="createdBy" class="text-center">
+              <p>Developer <small>Winder Ojeda</a></small>
+              <a href="https://twitter.com/ojedawinder" target="_blank"><i class="fa fa-twitter link-social" aria-hidden="true"></i></a>
+              <a href="https://github.com/ojedawinder" target="_blank"><i class="fa fa-github link-social" aria-hidden="true"></i></a>
+              <a href="https://ve.linkedin.com/in/ojedawinder" target="_blank"><i class="fa fa-linkedin link-social" aria-hidden="true"></i></a>
+            </div>
+          </div>
+        </div>
+  </body>
+</html>
